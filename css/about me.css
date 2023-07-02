@@ -1,0 +1,388 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+:root{
+	--font-1:'Roboto', sans-serif;
+	--font-2:'Chakra Petch', sans-serif;
+	--color-1: #145980;
+	--color-2: #1f9ed5;
+	--color-prim:#4AF0EA;
+	--bg-color2:#3BBDB9;
+	--bg-color:#000000;
+	--text-size:#ededed;
+}
+main{
+	background: #000000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5rem 3%;
+}
+
+html{
+	font-size: 62,5%;
+	overflow-x: hidden;
+}
+
+body{
+	background: var(--bg-color);
+	color: var(--text-size); 
+}
+.cabecera{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	background: var(--bg-color);
+	padding: 1.2rem 5%;
+	align-items: center;
+	position: fixed;
+	z-index: 100;
+}
+.logo{
+	font-family: var(--font-2);
+	letter-spacing: -10.5px;
+	color: var(--color-prim);
+	font-size: 2.5rem;
+	font-weight: 700;
+	transition: 1s;
+}
+.logo:hover{
+	letter-spacing: 3px;
+	color: var(--bg-color2);
+	text-shadow: 0px 0px 5px var(--color-prim),
+	0px 0px 10px var(--color-prim),
+	0px 0px 15px var(--color-prim),
+	0px 0px 20px var(--color-prim);
+}
+.navbar a{
+	padding: 7px;
+	font-size: 1.5rem;
+	font-weight: 550;
+	margin-left: 10px;
+	transition: 1s;
+	position: relative;
+	overflow: hidden;
+
+}
+.navbar a span{
+	color: var(--color-prim);
+}
+.navbar a:hover{
+	text-shadow: 0px 0px 5px var(--color-prim),
+	0px 0px 10px var(--color-prim),
+	0px 0px 15px var(--color-prim),
+	0px 0px 20px var(--color-prim);
+	
+}
+/*===================primero=======================*/
+.primero{
+	
+	width: 25%;
+	height: 100vh;
+	display: flex;
+	flex-flow: column;
+	justify-content:space-around ;
+	align-items: center;
+	
+}
+.primero img{
+	border-radius: 5px;
+	width: 100%;
+}
+h1{
+	font-size: 22px;
+	text-align: center;
+	font-family:var(--font-1) ;
+	color: aliceblue;
+}
+
+.datos{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	border-radius: 5px;
+	box-shadow: 2px 2px 9px rgba(255, 255, 255, 0.10);
+	width: 95%;
+	height: 18%;
+	text-align: center;
+	line-height: 1.5rem;
+
+}
+.seccion{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.seccion p{
+	border-radius: 5px;
+	font-size: 13px;
+	font-family: cursive;
+	padding-left: 10px;
+	background: var(--bg-color2);
+	height: 10%;
+	text-align: center;
+}
+.datos p{
+	font-size: 0.8rem;
+	font-weight: 700;
+	padding-left: 2%;
+}
+.cuadros{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	box-shadow: 2px 2px 9px rgba(255, 255, 255, 0.10);
+	width: 95%;
+	border-radius: 5px;
+	height: 15%;
+
+}
+.conp p{
+	font-weight: 600;
+	font-size: 11px;
+	text-align: center;
+	background: var(--bg-color2);
+	height: 25px;
+	width: 100px;
+	text-align: center;
+	margin: 3px;
+	border-radius: 5px;
+}
+.conp{
+	display:  flex;
+	flex-flow: column;
+	gap: 5px;
+}
+.p3{
+	font-family: var(--font-2);
+	color: aliceblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+p{
+	font-family: var(--font-2);
+	color: aliceblue;
+}
+/*====================segundo========================*/
+
+.segundo{
+	
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	flex-flow: column;
+	justify-content:space-between ;
+	align-items: center;
+	padding: 10px 3%;
+}
+
+.bio{
+	box-shadow: 2px 2px 9px rgba(255, 255, 255, 0.10);
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	text-align: start;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid grad;
+
+}
+.bio p{
+	line-height: 1.4rem;
+}
+.grafico1{
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: space-between;
+	justify-content: center;
+	gap: 5px;
+	box-shadow: 2px 2px 9px rgba(255, 255, 255, 0.10);
+	padding: 2%;
+	border-radius: 5px;
+}
+.detalles{
+	font-size: 14px;
+	font-weight: 600;
+	display: flex;
+	justify-content: space-between;
+}
+.menu{
+	/*position: relative;*/
+	border: 2px solid var(--bg-color2);
+	height: 22px;
+	border-radius: 5px;
+}
+h2{
+	/* font-family: cursive ; */
+	font-size: 18px;
+	color: var(--bg-color2);
+	font-family:var(--font-1) ;
+	color: aliceblue;
+}
+
+.grafico2{
+	box-shadow: 2px 2px 9px rgba(255, 255, 255, 0.10);
+	width: 100%;
+	padding: 2%;
+	border-radius: 5px;
+}
+/*===================tercera============================*/
+
+.tercero{
+
+	width: 25%;
+	height: 100vh;
+	display: flex;
+	flex-flow: column;
+	justify-content:space-between ;
+	align-items: center;
+	padding: 10px 2%;
+}
+.gofru{
+	padding-left: 25px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	box-shadow: 2px 2px 9px rgba(255, 255, 255, 0.10);
+	width: 100%;
+	border-radius: 5px;
+}
+.motiv{
+	padding: 5px;
+	box-shadow: 2px 2px 9px rgba(255, 255, 255, 0.10);
+	width: 100%;
+	border-radius: 5px;
+}
+span{
+	font-family: var(--font-2);
+	color: aliceblue;
+}
+li{
+	line-height: 1.7rem;
+	font-family: var(--font-2);
+	color: aliceblue;
+}
+
+/*=======================animation=======================*/
+
+
+.menu div{
+	height: 100%;
+	width: 0;
+	/*position: relative;*/
+	background: var(--color-prim);
+}
+#passive-menu{  
+	animation:passive-barra 5s forwards }
+
+@keyframes passive-barra{
+	100%{
+		width: 20%;
+	}
+}
+
+#Introvert-menu{  
+	animation:introvert-barra 5s forwards }
+
+@keyframes introvert-barra{
+	100%{
+		width: 40%;
+	}
+}
+
+#analyt-menu{  
+	animation:analyt-barra 5s forwards }
+
+@keyframes analyt-barra{
+	100%{
+		width: 30%;
+	}
+}
+
+#loyal-menu{  
+	animation:loyal-barra 5s forwards }
+
+@keyframes loyal-barra{
+	100%{
+		width: 20%;
+	}
+}
+/*==============animation2=============*/
+
+#chrome-menu{  
+	animation:chrome-barra 5s forwards }
+
+@keyframes chrome-barra{
+	100%{
+		width: 50%;
+	}
+}
+
+#mobile-menu{  
+	animation:mobile-barra 5s forwards }
+
+@keyframes mobile-barra{
+	100%{
+		width: 90%;
+	}
+}
+
+#mail-menu{  
+	animation:mail-barra 5s forwards }
+
+@keyframes mail-barra{
+	100%{
+		width: 60%;
+	}
+}
+
+#tradi-menu{  
+	animation:tradi-barra 5s forwards }
+
+@keyframes tradi-barra{
+	100%{
+		width: 40%;
+	}
+}
+
+/*================animation3==================*/
+
+#price-menu{  
+	animation:price-barra 5s forwards }
+
+@keyframes price-barra{
+	100%{
+		width: 70%;
+	}
+}
+
+#comfort-menu{  
+	animation:comfort-barra 5s forwards }
+
+@keyframes comfort-barra{
+	100%{
+		width: 75%;
+	}
+}
+
+#loyalty-menu{  
+	animation:loyalty-barra 5s forwards }
+
+@keyframes loyalty-barra{
+	100%{
+		width: 60%;
+	}
+}

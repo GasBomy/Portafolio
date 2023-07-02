@@ -1,0 +1,239 @@
+*{
+	margin: 1px;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+	text-decoration: none;
+	scroll-behavior: smooth;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+:root{
+	--font-1:'Roboto', sans-serif;
+	--font-2:'Chakra Petch', sans-serif;
+	--color-primario:#4AF0EA;
+	--bg-color2:#3BBDB9;
+	--bg-color:#000000;
+	--text-size:#ededed;
+	--bg-color3:#E3D944;
+}
+html{
+	font-size: 62,5%;
+	overflow-x: hidden;
+}
+
+body{
+	background: var(--bg-color);
+	color: var(--text-size);
+}
+.cabecera{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	background: var(--bg-color);
+	padding: 1.2rem 5%;
+	align-items: center;
+	position: fixed;
+	z-index: 100;
+}
+/* =====================================================00 */
+.logo{
+	font-family: var(--font-1);
+	letter-spacing: -10.5px;
+	color: var(--color-primario);
+	font-size: 2.5rem;
+	font-weight: 700;
+	transition: 1s;
+}
+.logo:hover{
+	letter-spacing: 3px;
+	color: var(--bg-color2);
+	text-shadow: 0px 0px 5px var(--color-primario),
+	0px 0px 10px var(--color-primario),
+	0px 0px 15px var(--color-primario),
+	0px 0px 20px var(--color-primario);
+}
+
+a{
+	border: none;
+	background: transparent;
+}
+.navbar a{
+	padding: 7px;
+	font-size: 1.5rem;
+	color: var(--color-primario);
+	font-weight: 550;
+	margin-left: 10px;
+	transition: 1s;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.navbar a:hover{
+	text-shadow: 0px 0px 5px var(--color-primario),
+	0px 0px 10px var(--color-primario),
+	0px 0px 15px var(--color-primario),
+	0px 0px 20px var(--color-primario);
+	
+}
+/* =========================================================0 */
+
+img{
+	position: relative;
+	right: 135px;
+	top: 45px;
+
+}
+
+/*.navbar a::after{
+	inset:0;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: #ededed;
+	position: absolute;
+	border-radius: 5px;
+	z-index: 1;
+	top: -80px;
+	left: 0;
+	transition: 0.5s ease-in-out;
+}
+.navbar a:hover{
+	color:black;
+	/*background: #ededed;*/
+	/*border-radius: 5px;
+	transition: 2s;
+
+}
+.navbar a:hover::after{
+	top: 0;
+
+}
+.navbar a:active::after{
+	transition: 0.5s;
+	color: #ededed;
+	background: var(--bg-color);
+}
+span{
+	position: relative;
+	z-index: 2;
+}*/
+
+/*========================================================*/
+.principal{
+	position: relative;
+	text-align: center;
+	display: flex;
+	
+	justify-content: space-between;
+	align-items: space-between;
+	padding: 10rem 9% 0rem;
+
+}
+h2{
+	color: var(--color-primario);
+	font-size: 2rem;
+	font-weight: 800;
+	text-shadow: 0px 0px 20px var(--color-primario);
+}
+.boo{
+	width: 30%;
+	background-image: url(../images/maboo.svg) ;
+	background-position: center;
+	background-size: 300px;
+	background-repeat: no-repeat;
+	transition: 4s;
+	
+}
+.boo:hover{
+	background-image: url(../images/goku.svg);
+	width: 30%;
+	background-position: center;
+	background-size: 300px;
+	background-repeat: no-repeat;
+	box-shadow:0px 0px 5px var(--bg-color3),
+	0px 0px 10px var(--bg-color3),
+	0px 0px 15px var(--bg-color3),
+	0px 0px 20px var(--bg-color3); 
+	border-radius: 25%;
+}
+/* ========================================================== */
+.formulario{
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	/*padding:2rem 0 3rem;
+	/*width: 80%;
+	height: 100vh;*/
+}
+input, textarea{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	margin: px;
+	text-align: left;
+	border: none;
+	background: transparent;
+	color: white;
+	outline: none;
+	box-shadow: 0px 0px 5px var(--color-primario);
+	border-radius: 2px;
+	border: 2px solid var(--color-primario);
+	font-family: sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+}
+textarea{
+	margin-top: 40px;
+}
+input{
+	left: 18px;
+	width: 100%;
+}
+
+@media(hover: hover){  
+input:hover{
+	box-shadow: 0px 0px 20px  var(--bg-color2);
+}
+input:active{
+	color:var(--color-primario) ;
+	box-shadow:0px 0px 30px  var(--color-primario);
+}
+textarea{
+	resize: none;
+	height: 100px;
+}
+
+.botones{
+	margin: 10px;
+}
+.bot{
+	color: var(--color-primario);
+	margin: 15px;
+	border: none;
+	width:80px;
+	height: 40px;
+	border: 2px solid var(--color-primario);
+	border-radius: 5px;
+	font-size: 1.1rem;
+	font-weight: 600;
+	box-shadow: 0px 0px 5px var(--color-primario);
+	background: transparent;
+}
+@media(hover: hover){  
+.bot:hover{
+	box-shadow: 0px 0px 20px  var(--bg-color2);
+}
+.bot:active{
+	color:var(--color-primario) ;
+	box-shadow:0px 0px 30px  var(--color-primario);
+	/*background: #023e11;*/
+}
+
+
+/* parar dispositivos moviles */
