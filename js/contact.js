@@ -13,7 +13,7 @@ const formulario = () =>{
 		name: userName,
 		email: userEmail,
 		phone: userPhone,
-		asunto: userAsunto,
+		asunto: userAsunto
 	}
 	
 	console.log(info);
@@ -22,4 +22,24 @@ const formulario = () =>{
 	
 }
 formulario()
+//=========================================0
+/* const formulario = document.getElementById('registerFormulario2')
+let info =[]
+const login= (event) =>{
+	event.preventDefault()
+	console.log(event);
+	console.log(formulario.userName.value)
+	console.log(formulario.password.value)
+	console.log(formulario.telefono.value)
+	console.log(formulario.asunto.value)
 
+	let datos ={
+		name:userName.value,
+		email:password.value,
+		phone:telefono.value,
+		asunto:asunto.value,
+	}
+info.push(datos);
+console.log(info)
+}
+formulario.onsubmit = login */

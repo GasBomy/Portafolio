@@ -386,3 +386,20 @@ li{
 		width: 60%;
 	}
 }
+
+/* -------------------------------------------------------------------------- */
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	gap: 30px;
+	padding-bottom: 10px;
+}
+
+.ull{
+	display: flex;
+	gap: 50px;
+	list-style: none;
+	padding-top: 100px;
+}
